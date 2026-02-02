@@ -13,25 +13,24 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <!-- Header / Nav -->
-      <header class="header">
-        <nav class="nav">
-          <h1 class="logo">Tate Le</h1>
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+    <!-- Header / Nav -->
+    <header class="header">
+      <nav class="nav">
+        <h1 class="logo">Tate Le</h1>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <div class="container">
       <!-- Hero -->
       <section class="hero">
         <div class="hero-left">
           <div class="hero-title">
-            <h2>Tate Le</h2>
-            <h2>Software Developer</h2>
+            <p>Software <span>Developer</span></p>
           </div>
 
           <p>
@@ -47,31 +46,56 @@
       <!-- About -->
       <section id="about" class="section">
         <h3>About Me</h3>
-        <p>
-          I’m a software developer focused on building reliable backend systems
-          and growing into full-stack development. I enjoy learning by building
-          real projects and continuously improving my fundamentals.
-        </p>
+        <div class="aboutCard">
+          <p>
+            I’m a software developer passionate about building reliable and
+            maintainable backend systems while expanding my skills into
+            full-stack development. I enjoy learning by taking on real projects
+            and experimenting with new technologies, constantly pushing myself
+            to improve my fundamentals. Outside of programming, I’m an avid
+            basketball player and love spending quality time with my family,
+            which helps me stay balanced and motivated. I also enjoy creating
+            personal projects that challenge me to solve problems creatively,
+            refine my coding practices, and explore innovative solutions. My
+            goal is to combine my technical skills, curiosity, and dedication to
+            deliver software that is both efficient and user-friendly.
+          </p>
+        </div>
       </section>
 
       <!-- Projects -->
       <section id="projects" class="section">
         <h3>Projects</h3>
 
-        <div class="project">
-          <h4>FlashCard API (In Progress)</h4>
-          <p>
-            RESTful API built with ASP.NET Core and Entity Framework. Supports
-            CRUD operations, DTOs, and relational data.
-          </p>
-        </div>
+        <div class="projects-grid">
+          <div class="project">
+            <h4>FlashCard API (In Progress)</h4>
+            <p>
+              RESTful API built with ASP.NET Core and Entity Framework. Supports
+              CRUD operations, DTOs, and relational data.
+            </p>
+            <p class="tech">Tech Stack: ASP.NET Core · React · EF Core</p>
+          </div>
 
-        <div class="project">
-          <h4>DailyBalance (In Progress)</h4>
-          <p>
-            Personal finance tracker with income, expenses, and category
-            visualization.
-          </p>
+          <div class="project">
+            <h4>DailyBalance (In Progress)</h4>
+            <p>
+              Personal finance tracker with income, expenses, and category
+              visualization.
+            </p>
+            <p class="tech">Tech Stack: ASP.NET Core · React · EF Core</p>
+          </div>
+
+          <div class="project">
+            <h4>Reactivities (In Progress)</h4>
+            <p>
+              Reactivities is a full-stack web application built with ASP.NET
+              Core Web API and React that allows users to create, manage, and
+              track activities. The project focuses on clean architecture,
+              RESTful APIs, and modern frontend patterns.
+            </p>
+            <p class="tech">Tech Stack: ASP.NET Core · React · EF Core</p>
+          </div>
         </div>
       </section>
 
