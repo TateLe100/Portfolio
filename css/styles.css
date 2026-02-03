@@ -7,7 +7,12 @@
 /* * {
   outline: 1px solid red;
 } */
-
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
 body {
   margin: 0;
   padding: 0;
@@ -165,6 +170,110 @@ nav ul {
   color: var(--text-muted);
 }
 /* -------------- */
+
+/* ContactSection */
+#contact h3 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.contactContainer {
+  display: flex;
+  gap: 3rem;
+  align-items: stretch;
+}
+.contactLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contactSpot {
+  background: var(--text-main);
+  padding: 1rem 1rem;
+  border-radius: 12px;
+
+  border: 1px solid rgba(15, 23, 42, 0.082);
+
+  font-weight: 500;
+  text-decoration: none;
+}
+.contactSpot p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.contactSpot:hover {
+  transition:
+    transform 0.8s ease,
+    box-shadow 0.8s ease;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.336);
+}
+.contactRight {
+  flex: 1;
+
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+
+  background: var(--text-main);
+  border-radius: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+}
+.contactForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+  /* width: 100%; */
+  padding: 0.9rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+
+  border-radius: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--bg-main);
+
+  outline: none;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  color: rgba(15, 23, 42, 0.6);
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* Button */
+.contactForm button {
+  margin-top: 0.5rem;
+  padding: 0.75rem 1rem;
+
+  border-radius: 10px;
+  border: none;
+
+  background: var(--accent);
+  /* color: var(--text-muted); */
+  /* font-weight: 600; */
+  cursor: pointer;
+}
+
+.contactForm button:hover {
+  background: var(--text-muted);
+}
+
+/* -------------- */
+
 @media (max-width: 900px) {
   .projects-grid {
     grid-template-columns: 1fr;
@@ -177,6 +286,9 @@ nav ul {
     text-align: center;
     gap: 2rem;
     margin: 0 0;
+  }
+  .contactContainer {
+    flex-direction: column;
   }
 }
 

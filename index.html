@@ -12,11 +12,11 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body id="top">
     <!-- Header / Nav -->
     <header class="header">
       <nav class="nav">
-        <h1 class="logo">Tate Le</h1>
+        <a href="#top" class="logo">Tate Le</a>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -117,20 +117,56 @@
 
       <!-- Contact -->
       <section id="contact" class="section">
-        <h3>Contact</h3>
-        <p>
-          Email: <a href="mailto:tatele13@gmail.com">TateLe100@gmail.com</a>
-        </p>
-        <p>
-          GitHub:
-          <a href="https://github.com/TateLe100" target="_blank"
-            >github.com/TateLe100</a
-          >
-        </p>
-        <p>
-          Resume:
-          <a href="#" target="_blank">Resume Goes Here</a>
-        </p>
+        <h3>Get In Touch</h3>
+        <div class="contactContainer">
+          <div class="contactLeft">
+            <div class="contactSpot">
+              <p>Email:</p>
+              <a href="mailto:tatele13@gmail.com">TateLe100@gmail.com</a>
+            </div>
+
+            <div class="contactSpot">
+              <p>GitHub:</p>
+              <a href="https://github.com/TateLe100" target="_blank"
+                >github.com/TateLe100</a
+              >
+            </div>
+            <div class="contactSpot">
+              <p>LinkedIn:</p>
+              <a
+                href="https://www.linkedin.com/in/tate-le-3b4b621b4/"
+                target="_blank"
+                >linkedin.com/in/tate-le-3b4b621b4/</a
+              >
+            </div>
+            <div class="contactSpot">
+              <p>Resume:</p>
+              <a href="#" target="_blank">Resume Goes Here</a>
+            </div>
+          </div>
+          <div class="contactRight">
+            <p>Send a Message</p>
+            <form class="contactForm">
+              <input type="text" name="name" placeholder="Your Name" required />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
       </section>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
