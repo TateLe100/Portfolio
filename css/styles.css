@@ -75,13 +75,22 @@ nav ul {
 /* Hero Section */
 .hero {
   display: flex;
-  margin: 6rem 0;
+  margin: 8rem 0;
   align-items: center;
   justify-content: space-between;
+}
+.hero-quote {
+  font-style: italic;
+  opacity: 0.75;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  width: 80%;
 }
 .hero img {
   border-radius: 20%;
   margin-left: 2rem;
+  border: 4px solid white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 .hero-left {
   flex: 1;
@@ -96,13 +105,24 @@ nav ul {
 .hero-title span {
   display: block;
 }
+
+.hero-title p {
+  margin-top: 50px;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
 .hero-left h2 {
   font-size: 2.5rem;
-  /* margin-bottom: 0.5rem; */
+  margin-bottom: 0.5rem;
 }
 
 .hero-title {
-  font-size: 70px;
+  font-size: 100px;
+  font-weight: 1000;
+}
+.hero-quote span {
+  display: block;
+  font-weight: 900;
+  color: black !important;
 }
 
 /* --------------- */
@@ -186,26 +206,33 @@ nav ul {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  justify-content: space-between;
 }
-
+.contactSpot a {
+  color: var(--bg-main);
+  text-decoration: none;
+}
 .contactSpot {
   background: var(--text-main);
   padding: 1rem 1rem;
   border-radius: 12px;
 
   border: 1px solid rgba(15, 23, 42, 0.082);
-
+  transition:
+    transform 0.9s ease,
+    box-shadow 0.9s ease;
   font-weight: 500;
   text-decoration: none;
 }
 .contactSpot p {
   margin-top: 0px;
   margin-bottom: 10px;
+  color: var(--text-muted);
 }
 .contactSpot:hover {
   transition:
-    transform 0.8s ease,
-    box-shadow 0.8s ease;
+    transform 0.9s ease,
+    box-shadow 0.9s ease;
   transform: translateY(-2px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.336);
 }
@@ -263,8 +290,6 @@ nav ul {
   border: none;
 
   background: var(--accent);
-  /* color: var(--text-muted); */
-  /* font-weight: 600; */
   cursor: pointer;
 }
 
@@ -274,7 +299,7 @@ nav ul {
 
 /* -------------- */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .projects-grid {
     grid-template-columns: 1fr;
   }
@@ -286,6 +311,12 @@ nav ul {
     text-align: center;
     gap: 2rem;
     margin: 0 0;
+  }
+  .hero-quote {
+    font-style: italic;
+    opacity: 0.75;
+    width: 100%;
+    margin: 20px auto;
   }
   .contactContainer {
     flex-direction: column;
