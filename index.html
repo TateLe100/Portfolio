@@ -10,9 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body id="top">
+    <div id="toast" class="toast">Message sent successfully ✅</div>
     <!-- Header / Nav -->
     <header class="header">
       <nav class="nav">
@@ -123,32 +128,37 @@
         </p>
         <div class="contactContainer">
           <div class="contactLeft">
+            <p>Contact Info</p>
             <div class="contactSpot">
-              <p>Email</p>
-              <a href="mailto:tatele13@gmail.com">TateLe100@gmail.com</a>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:tatele111@gmail.com">Email</a>
             </div>
 
             <div class="contactSpot">
-              <p>GitHub</p>
-              <a href="https://github.com/TateLe100" target="_blank"
-                >github.com/TateLe100</a
-              >
+              <i class="fa-brands fa-github"></i>
+              <a href="https://github.com/TateLe100" target="_blank">GitHub</a>
             </div>
+
             <div class="contactSpot">
-              <p>LinkedIn</p>
-              <a href="www.linkedin.com/in/tatele" target="_blank"
-                >www.linkedin.com/in/tatele</a
-              >
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/tatele" target="_blank">
+                LinkedIn
+              </a>
             </div>
+
             <div class="contactSpot">
-              <p>Resume</p>
-              <a href="#" target="_blank">Resume Goes Here</a>
+              <i class="fa-solid fa-file-lines"></i>
+              <a href="#" target="_blank">Resume</a>
             </div>
           </div>
           <div class="contactRight">
-            <p>Send a Message</p>
+            <p>Send a Message!</p>
 
-            <form class="contactForm">
+            <form
+              class="contactForm"
+              action="https://formspree.io/f/xojnjwwg"
+              method="POST"
+            >
               <input type="text" name="name" placeholder="Your Name" required />
 
               <input
