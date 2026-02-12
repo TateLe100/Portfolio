@@ -390,6 +390,11 @@ nav ul {
 }
 
 @media (max-width: 700px) {
+  .hero img {
+    border-radius: 20%;
+    border: 4px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  }
   .hero-title {
     font-size: 3rem;
   }
